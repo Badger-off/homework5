@@ -3,7 +3,7 @@
 public class Main {
     public static void main(String[] args) {
         // задача 1
-        for (short i = 0; i <= 10; i++) {
+        for (short i = 1; i <= 10; i++) {
             System.out.println(i);
         }
         // задача 2
@@ -39,8 +39,7 @@ public class Main {
         // задача 9
         int moreSavings = 0;
         for (short i = 1; i <= 12; i++) {
-            moreSavings += moreSavings/100;
-            moreSavings += 29000;
+            moreSavings += 29000 + moreSavings/100;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + moreSavings);
         }
         // задача 10
